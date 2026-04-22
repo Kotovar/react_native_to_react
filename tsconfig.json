@@ -25,7 +25,9 @@
       "@components/*": ["./src/components/*"],
       "@components": ["./src/components/index.ts"],
       "@product/*": ["./src/product/*"],
-      "@product": ["./src/product/index.ts"]
+      "@product": ["./src/product/index.ts"],
+      "@constants/*": ["./src/constants/*"],
+      "@constants": ["./src/constants/index.ts"]
     }
   },
   "include": ["src"]
