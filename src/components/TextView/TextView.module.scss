@@ -1,0 +1,12 @@
+@mixin text-style($size, $weight) {
+  font-size: #{$size}px;
+  font-weight: $weight;
+}
+
+.text15_700 {
+  @include text-style(15, 700);
+}
+
+.text14_400 {
+  @include text-style(14, 400);
+}
