@@ -1,7 +1,7 @@
-import { ProductModal } from "./components/ProductModal"
+import { ProductModal } from "./product/ProductModal"
 
 function App() {
-  return <ProductModal id="1" />
+  return <ProductModal />
 }
 
 export default App
