@@ -1,3 +1,86 @@
 .modal {
-    padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--color-white);
+  margin-top: 8px;
+}
+
+.scrollArea {
+  position: relative;
+  overflow-y: auto;
+  padding-bottom: 120px;
+  scrollbar-width: none;
+}
+
+.scrollArea::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  margin-top: 16px;
+}
+
+.wrapTitle {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  row-gap: 6px;
+  padding: 0 16px;
+  align-items: start;
+}
+
+.containerTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1 1 auto;
+  min-width: 0;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.wrapTag {
+  flex: none;
+  flex-shrink: 0;
+  width: auto;
+  max-width: max-content;
+  min-height: 24px;
+  border-radius: 8px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.wrapBtn {
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wrapDescription {
+  padding: 0 16px;
+  margin-top: 20px;
+}
+
+.titleButton {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.titleText {
+  display: block;
+  width: 100%;
+  text-align: left;
 }

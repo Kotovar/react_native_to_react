@@ -2,7 +2,7 @@ import type { ComponentProps, CSSProperties } from 'react'
 import clsx from 'clsx'
 import styles from './TextView.module.scss'
 
-type TextStyleKey = '12-500' | '14-400' | '14-700' | '15-700' | '15-900' | '20-700' | '20-900'
+type TextStyleKey = '12-500' | '14-400' | '14-500' | '14-700' | '15-700' | '15-900' | '20-700' | '20-900'
 
 interface Props extends ComponentProps<'span'> {
   textStyle?: TextStyleKey
@@ -18,6 +18,7 @@ interface Props extends ComponentProps<'span'> {
 const textStyleClassNameMap: Record<TextStyleKey, string> = {
   '12-500': styles.text12_500,
   '14-400': styles.text14_400,
+  '14-500': styles.text14_500,
   '14-700': styles.text14_700,
   '15-700': styles.text15_700,
   '15-900': styles.text15_900,
@@ -54,7 +55,7 @@ export const TextView = ({
       ...(ml !== undefined && { marginLeft: ml }),
       ...(mr !== undefined && { marginRight: mr }),
       ...(mb !== undefined && { marginBottom: mb }),
-      ...(lh !== undefined && { lineHeight: lh }),
+      ...(lh !== undefined && { lineHeight: `${lh}px` }),
       ...(numberOfLines && numberOfLines > 1 && {
         ['--lines' as string]: numberOfLines,
       }),

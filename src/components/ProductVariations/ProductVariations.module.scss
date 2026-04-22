@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  gap: 8px;
+  padding: 0 16px;
+  margin-top: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.root::-webkit-scrollbar {
+  display: none;
+}
+
+.button,
+.buttonActive {
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: var(--color-green05);
+  color: var(--color-black02);
+  white-space: nowrap;
+}
+
+.buttonActive {
+  background: var(--color-green03);
+}

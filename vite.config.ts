@@ -15,6 +15,8 @@ export default defineConfig({
       '@constants': path.resolve(__dirname, './src/constants'),
       '@services': path.resolve(__dirname, './src/services'),
       '@appMetrica': path.resolve(__dirname, './src/appMetrica'),
+      '@stores': path.resolve(__dirname, './src/stores'),
+      '@utils': path.resolve(__dirname, './src/utils'),
     },
   },
 })

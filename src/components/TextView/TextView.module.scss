@@ -11,6 +11,10 @@
   @include text-style(14, 400);
 }
 
+.text14_500 {
+  @include text-style(14, 500);
+}
+
 .text14_700 {
   @include text-style(14, 700);
 }

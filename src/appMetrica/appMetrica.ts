@@ -1,4 +1,5 @@
 export const EEvent = {
+  ShareProduct: 'ShareProduct',
   TakeWithProduct: 'TakeWithProduct',
 } as const
 

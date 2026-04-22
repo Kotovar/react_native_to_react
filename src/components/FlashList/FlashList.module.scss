@@ -5,6 +5,7 @@
 .horizontal {
   overflow-y: hidden;
   overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .hideScrollbar {
@@ -29,4 +30,14 @@
 
 .item {
   flex: 0 0 auto;
+}
+
+.dragEnabled {
+  cursor: grab;
+  user-select: none;
+}
+
+.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
 }

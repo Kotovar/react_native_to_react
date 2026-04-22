@@ -65,7 +65,7 @@ export const EnergyNutritional = ({ cal, prot, fats, carb }: Props) => {
 
   return (
     <div className={styles.container}>
-      <TextView ml={12} mr={12} textStyle={'20-900'} mt={2} mb={4}>
+      <TextView textStyle={'20-900'} className={styles.title} mt={2} mb={4}>
         {'Энергетическая\nи пищевая ценность'}
       </TextView>
       <div className={styles.decoration} />
@@ -86,8 +86,8 @@ export const EnergyNutritional = ({ cal, prot, fats, carb }: Props) => {
       <div className={styles.containerDaily}>
         <div className={styles.empty} />
         <div className={styles.wrapDaily}>
-          <TextView ml={15} textStyle={'12-500'}>
-            {'Дневная норма %'}
+          <TextView ml={15} textStyle={'12-500'} className={styles.dailyLabel}>
+            {'Дневная\nнорма\u00A0%'}
           </TextView>
         </div>
       </div>
@@ -95,7 +95,7 @@ export const EnergyNutritional = ({ cal, prot, fats, carb }: Props) => {
       {renderData()}
       <div className={styles.decoration2} />
       <div className={styles.wrapText}>
-        <TextView textStyle={'12-500'} color={theme.gray}>
+        <TextView textStyle={'12-500'} color={theme.gray} className={styles.note}>
           {
             'Процент от суточной нормы показывает, какое количество питательных веществ в порции продукта приходится на суточный рацион. Значения усреднены и основаны на данных общих рекомендательных норм.'
           }

@@ -2,6 +2,15 @@
   margin-top: 24px;
 }
 
+.title {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.carousel {
+  position: relative;
+}
+
 .list {
   width: 100%;
 }
@@ -22,4 +31,64 @@
 .card {
   width: 172px;
   min-height: 266px;
+}
+
+.navButton {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navButton {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    border: 0;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .navButton:first-of-type {
+    left: 12px;
+  }
+
+  .navButton:last-of-type {
+    right: 12px;
+  }
+
+  .navButton:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
+
+  .navButton:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+}
+
+.arrowLeft,
+.arrowRight {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--color-black02);
+}
+
+.arrowLeft {
+  margin-left: 4px;
+  border-left: 2px solid var(--color-black02);
+  transform: rotate(-45deg);
+}
+
+.arrowRight {
+  margin-right: 4px;
+  border-right: 2px solid var(--color-black02);
+  transform: rotate(45deg);
 }

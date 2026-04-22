@@ -20,15 +20,21 @@ export const Indicators = ({
 
   return (
     <div className={clsx(styles.root, className)}>
-      {Array.from({ length }, (_, index) => (
-        <button
-          key={index}
-          type="button"
-          className={index === activeIndex ? styles.dotActive : styles.dot}
-          onClick={() => onSelect?.(index)}
-          aria-label={`Перейти к слайду ${index + 1}`}
-        />
-      ))}
+      {Array.from({ length }, (_, index) => {
+        const isActive = index === activeIndex
+        const dotClassName = isActive ? styles.dotActive : styles.dotInactive
+
+        return (
+          <button
+            key={index}
+            type="button"
+            className={clsx(styles.dot, dotClassName)}
+            onClick={() => onSelect?.(index)}
+            aria-label={`Перейти к слайду ${index + 1}`}
+            aria-current={isActive}
+          />
+        )
+      })}
     </div>
   )
 }

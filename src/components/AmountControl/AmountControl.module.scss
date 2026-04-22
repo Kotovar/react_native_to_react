@@ -1,0 +1,69 @@
+.root {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.priceBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+}
+
+.priceRow {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1px;
+  line-height: 1;
+}
+
+.priceMajor {
+  display: inline-block;
+  line-height: 1;
+}
+
+.priceMinor {
+  display: inline-block;
+  position: relative;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  transform: translateY(50%);
+}
+
+.priceMeta {
+  white-space: nowrap;
+}
+
+.button,
+.stepper {
+  min-height: 44px;
+  border-radius: 14px;
+  background: var(--color-green04);
+}
+
+.button {
+  padding: 0 40px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepper {
+  min-width: 44px;
+  color: var(--color-white);
+  font-size: 24px;
+  line-height: 1;
+  padding: 0 18px;
+}
