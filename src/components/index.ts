@@ -1,3 +1,5 @@
-export * from './HorizontalList/HorizontalList'
+export * from './Carousel/Carousel'
+export * from './FlashList/FlashList'
 export * from './Indicators/Indicators'
+export * from './ProductCard/ProductCard'
 export * from './TextView/TextView'

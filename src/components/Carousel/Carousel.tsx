@@ -1,9 +1,9 @@
 import { useCallback, useRef } from 'react'
 import type { ReactNode, RefObject, UIEvent } from 'react'
 import clsx from 'clsx'
-import styles from './HorizontalList.module.scss'
+import styles from './Carousel.module.scss'
 
-interface HorizontalListProps<T> {
+interface CarouselProps<T> {
   items: T[]
   renderItem: (item: T, index: number) => ReactNode
   getItemKey?: (item: T, index: number) => string
@@ -15,7 +15,7 @@ interface HorizontalListProps<T> {
   slideClassName?: string
 }
 
-export const HorizontalList = <T,>({
+export const Carousel = <T,>({
   items,
   renderItem,
   getItemKey,
@@ -25,15 +25,14 @@ export const HorizontalList = <T,>({
   className,
   contentClassName,
   slideClassName,
-}: HorizontalListProps<T>) => {
+}: CarouselProps<T>) => {
   const innerRef = useRef<HTMLDivElement | null>(null)
   const listRef = rootRef ?? innerRef
 
   const handleScroll = useCallback((event: UIEvent<HTMLDivElement>) => {
-    const container = event.currentTarget
     if (!onOffsetChange) return
 
-    onOffsetChange(container.scrollLeft)
+    onOffsetChange(event.currentTarget.scrollLeft)
   }, [onOffsetChange])
 
   return (

@@ -1,3 +1,25 @@
-.modal {
-  padding: 16px;
+.container {
+  margin-top: 24px;
+}
+
+.list {
+  width: 100%;
+}
+
+.flashList {
+  padding: 0 16px;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 172px;
+}
+
+.slide + .slide {
+  margin-left: 6px;
+}
+
+.card {
+  width: 172px;
+  min-height: 266px;
 }

@@ -1,4 +1,4 @@
-import { Description, EnergyNutritional, ProductPhotos } from './components'
+import { Description, EnergyNutritional, ProductPhotos, RelatedProducts } from './components'
 import styles from './ProductModal.module.scss'
 
 const STORAGE = 'Хранить в сухом, защищённом от прямых солнечных лучей месте при температуре от +5°C до +25°C. После вскрытия упаковки хранить в холодильнике и употребить в течение 3 суток.';
@@ -12,6 +12,7 @@ const IMAGES = [
   { id: '2', url: 'juice.png' },
   { id: '3', url: 'juice.png' },
 ]
+const RELATED_IDS = ['101', '102', '103']
 
 export const ProductModal = () => {
   return (
@@ -19,6 +20,7 @@ export const ProductModal = () => {
       <Description storage={STORAGE} sostav={SOSTAV} />
       <EnergyNutritional cal={CAL} prot={PROT} fats={FATS} carb={CARB} />
       <ProductPhotos images={IMAGES} />
+      <RelatedProducts relatedIds={RELATED_IDS} />
     </div>
   )
 }

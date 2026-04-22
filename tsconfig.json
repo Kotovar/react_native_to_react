@@ -29,7 +29,9 @@
       "@constants/*": ["./src/constants/*"],
       "@constants": ["./src/constants/index.ts"],
       "@services/*": ["./src/services/*"],
-      "@services": ["./src/services/index.ts"]
+      "@services": ["./src/services/index.ts"],
+      "@appMetrica/*": ["./src/appMetrica/*"],
+      "@appMetrica": ["./src/appMetrica/index.ts"]
     }
   },
   "include": ["src"]

@@ -23,6 +23,10 @@
   @include text-style(15, 900);
 }
 
+.text20_700 {
+  @include text-style(20, 700);
+}
+
 .text20_900 {
   @include text-style(20, 900);
 }

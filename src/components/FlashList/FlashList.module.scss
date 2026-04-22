@@ -1,0 +1,32 @@
+.root {
+  overflow: auto;
+}
+
+.horizontal {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.hideScrollbar {
+  scrollbar-width: none;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.locked {
+  overflow: hidden;
+}
+
+.content {
+  display: block;
+}
+
+.horizontalContent {
+  display: flex;
+}
+
+.item {
+  flex: 0 0 auto;
+}

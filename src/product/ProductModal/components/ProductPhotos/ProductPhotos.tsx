@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react'
-import { HorizontalList, Indicators } from '@components'
+import { Carousel, Indicators } from '@components'
 import type { IProductImage } from '@services'
 import styles from './ProductPhotos.module.scss'
 
@@ -45,7 +45,7 @@ export const ProductPhotos = ({ images }: Props) => {
 
   return (
     <div className={styles.container}>
-      <HorizontalList
+      <Carousel
         rootRef={listRef}
         items={images}
         scrollEnabled={images.length > 1}
