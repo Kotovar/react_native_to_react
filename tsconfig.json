@@ -19,7 +19,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@components": ["./src/components/index.ts"],
+      "@product/*": ["./src/product/*"],
+      "@product": ["./src/product/index.ts"]
+    }
   },
   "include": ["src"]
 }
