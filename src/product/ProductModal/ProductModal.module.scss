@@ -4,7 +4,6 @@
   flex-direction: column;
   height: 100%;
   background: var(--color-white);
-  margin-top: 8px;
 }
 
 .scrollArea {
@@ -16,6 +15,11 @@
 
 .scrollArea::-webkit-scrollbar {
   display: none;
+}
+
+.hero {
+  position: relative;
+  margin-top: 8px;
 }
 
 .container {

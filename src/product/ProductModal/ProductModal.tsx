@@ -100,25 +100,27 @@ export const ProductModal = observer(({
   if (!product) return
 
   return (
-    <ModalSheet isOnlyChildren snapPoints={['100%']}>
+      <ModalSheet isOnlyChildren snapPoints={['100%']}>
       <div className={styles.modal}>
         <div ref={productScrollViewRef} className={styles.scrollArea}>
-          {product.availableones > 0 && (
-            <div className={styles.wrapBtn}>
-              <TouchableCustom style={circle(36, theme.KTIconsBg)} onPress={handleLike}>
-                <SvgIcon
-                  icon={'Heart'}
-                  fill={isFavorite ? theme.errorRed : undefined}
-                  stroke={isFavorite ? theme.errorRed : theme.darkIcons}
-                  size={17}
-                />
-              </TouchableCustom>
-              <TouchableCustom style={circle(36, theme.KTIconsBg)} onPress={onShare}>
-                <SvgIcon icon={'Share'} stroke={theme.darkIcons} size={17} />
-              </TouchableCustom>
-            </div>
-          )}
-          <ProductPhotos images={product.images} />
+          <div className={styles.hero}>
+            {product.availableones > 0 && (
+              <div className={styles.wrapBtn}>
+                <TouchableCustom style={circle(36, theme.KTIconsBg)} onPress={handleLike}>
+                  <SvgIcon
+                    icon={'Heart'}
+                    fill={isFavorite ? theme.errorRed : undefined}
+                    stroke={isFavorite ? theme.errorRed : theme.darkIcons}
+                    size={17}
+                  />
+                </TouchableCustom>
+                <TouchableCustom style={circle(36, theme.KTIconsBg)} onPress={onShare}>
+                  <SvgIcon icon={'Share'} stroke={theme.darkIcons} size={17} />
+                </TouchableCustom>
+              </div>
+            )}
+            <ProductPhotos images={product.images} />
+          </div>
           <div className={styles.container}>
             <TouchableCustom
               delayLongPress={5000}
