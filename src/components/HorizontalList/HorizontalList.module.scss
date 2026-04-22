@@ -1,0 +1,23 @@
+.root {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.root::-webkit-scrollbar {
+  display: none;
+}
+
+.locked {
+  overflow-x: hidden;
+}
+
+.content {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}

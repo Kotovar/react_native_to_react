@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.dot,
+.dotActive {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+  opacity: 0.35;
+  flex-shrink: 0;
+}
+
+.dotActive {
+  background-color: var(--color-indicator-active);
+  opacity: 1;
+}

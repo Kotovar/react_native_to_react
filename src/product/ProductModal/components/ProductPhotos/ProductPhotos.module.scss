@@ -1,3 +1,32 @@
-.modal {
-  padding: 16px;
+.container {
+  width: 100%;
+}
+
+.list {
+  width: 100%;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slideInner {
+  padding: 0 8px;
+}
+
+.image,
+.placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 24px;
+  background-color: var(--color-gray01);
+  display: block;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.placeholder {
+  margin: 0 8px;
 }
