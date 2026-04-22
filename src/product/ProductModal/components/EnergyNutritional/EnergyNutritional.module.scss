@@ -1,3 +1,103 @@
-.modal {
-  padding: 16px;
+.container {
+  margin-top: 30px;
+  width: calc(100% - 100px);
+  border: 1px solid var(--color-black);
+  background-color: var(--color-gray01);
+  margin-bottom: 20px;
+}
+
+.flex {
+  flex: 1;
+  min-width: 0;
+}
+
+.wrapText {
+  padding: 14px;
+}
+
+.wrapDaily {
+  width: 45%;
+  height: 100%;
+  background-color: var(--color-blue01);
+  display: flex;
+  justify-content: center;
+}
+
+.empty {
+  width: 55%;
+  height: 100%;
+}
+
+.containerDaily {
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.wrapRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 28px;
+  background-color: var(--color-green03);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wrapValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  width: 40%;
+  min-width: 0;
+}
+
+.wrapPercent {
+  background-color: var(--color-blue01);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.decoration {
+  height: 1px;
+  background-color: var(--color-black);
+  margin: 0 10px;
+}
+
+.wrapWeight {
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--color-black);
+  margin: 0 10px;
+}
+
+.wrapCal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--color-orange04);
+  height: 28px;
+}
+
+.cal {
+  width: 60%;
+  padding-left: 12px;
+}
+
+.cal2 {
+  width: 40%;
+}
+
+.decoration2 {
+  height: 3px;
+  background-color: var(--color-black);
+  margin: 0 10px;
 }

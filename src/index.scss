@@ -1,3 +1,13 @@
+:root {
+  --color-black: #000000;
+  --color-black02: #020202;
+  --color-blue01: #c8efff;
+  --color-gray: #7b7b7b;
+  --color-gray01: #f5f5f5;
+  --color-green03: #d8f0c8;
+  --color-orange04: #ffd6a5;
+}
+
 html {
   background-color: var(--color-background);
   transition: background-color 0.2s ease;
